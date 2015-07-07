@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		EC0518931B20E7AC00FA6DA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0518921B20E7AC00FA6DA4 /* AppDelegate.swift */; };
 		EC0518961B20E7AC00FA6DA4 /* Cinne.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EC0518941B20E7AC00FA6DA4 /* Cinne.xcdatamodeld */; };
-		EC05189B1B20E7AC00FA6DA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC0518991B20E7AC00FA6DA4 /* Main.storyboard */; };
 		EC05189D1B20E7AC00FA6DA4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC05189C1B20E7AC00FA6DA4 /* Images.xcassets */; };
-		EC0518A01B20E7AC00FA6DA4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC05189E1B20E7AC00FA6DA4 /* LaunchScreen.xib */; };
 		EC0518AC1B20E7AC00FA6DA4 /* CinneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0518AB1B20E7AC00FA6DA4 /* CinneTests.swift */; };
+		EC07CD4E1B4B89180074654F /* NearbyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC07CD4B1B4B89180074654F /* NearbyTableViewController.swift */; };
+		EC07CD4F1B4B89180074654F /* NearestTheaterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC07CD4D1B4B89180074654F /* NearestTheaterTableViewCell.swift */; };
+		EC07CD511B4B89D50074654F /* PosterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC07CD501B4B89D50074654F /* PosterCollectionViewCell.swift */; };
+		EC07CD521B4B8B8D0074654F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC0518991B20E7AC00FA6DA4 /* Main.storyboard */; };
+		EC07CD531B4B8B8D0074654F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC05189E1B20E7AC00FA6DA4 /* LaunchScreen.xib */; };
+		EC07CD551B4B8F090074654F /* TheaterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC07CD541B4B8F090074654F /* TheaterTableViewCell.swift */; };
 		EC353F921B471D98000A34C5 /* the-theory-of-everything.png in Resources */ = {isa = PBXBuildFile; fileRef = EC353F911B471D98000A34C5 /* the-theory-of-everything.png */; };
-		ECC0B49E1B3BB50600DCD685 /* NearbyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC0B49D1B3BB50600DCD685 /* NearbyTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +41,11 @@
 		EC0518A51B20E7AC00FA6DA4 /* CinneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CinneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC0518AA1B20E7AC00FA6DA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC0518AB1B20E7AC00FA6DA4 /* CinneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinneTests.swift; sourceTree = "<group>"; };
+		EC07CD4B1B4B89180074654F /* NearbyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyTableViewController.swift; sourceTree = "<group>"; };
+		EC07CD4D1B4B89180074654F /* NearestTheaterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearestTheaterTableViewCell.swift; sourceTree = "<group>"; };
+		EC07CD501B4B89D50074654F /* PosterCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PosterCollectionViewCell.swift; sourceTree = "<group>"; };
+		EC07CD541B4B8F090074654F /* TheaterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheaterTableViewCell.swift; sourceTree = "<group>"; };
 		EC353F911B471D98000A34C5 /* the-theory-of-everything.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "the-theory-of-everything.png"; sourceTree = "<group>"; };
-		ECC0B49D1B3BB50600DCD685 /* NearbyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +87,14 @@
 		EC05188F1B20E7AC00FA6DA4 /* Cinne */ = {
 			isa = PBXGroup;
 			children = (
+				EC07CD4A1B4B89180074654F /* Controllers */,
+				EC07CD4C1B4B89180074654F /* Views */,
 				EC0518921B20E7AC00FA6DA4 /* AppDelegate.swift */,
 				EC0518991B20E7AC00FA6DA4 /* Main.storyboard */,
 				EC05189C1B20E7AC00FA6DA4 /* Images.xcassets */,
 				EC05189E1B20E7AC00FA6DA4 /* LaunchScreen.xib */,
 				EC0518941B20E7AC00FA6DA4 /* Cinne.xcdatamodeld */,
 				EC0518901B20E7AC00FA6DA4 /* Supporting Files */,
-				ECC0B49D1B3BB50600DCD685 /* NearbyTableViewController.swift */,
 			);
 			path = Cinne;
 			sourceTree = "<group>";
@@ -116,6 +123,24 @@
 				EC0518AA1B20E7AC00FA6DA4 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EC07CD4A1B4B89180074654F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EC07CD4B1B4B89180074654F /* NearbyTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EC07CD4C1B4B89180074654F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EC07CD4D1B4B89180074654F /* NearestTheaterTableViewCell.swift */,
+				EC07CD501B4B89D50074654F /* PosterCollectionViewCell.swift */,
+				EC07CD541B4B8F090074654F /* TheaterTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,9 +224,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC07CD521B4B8B8D0074654F /* Main.storyboard in Resources */,
+				EC07CD531B4B8B8D0074654F /* LaunchScreen.xib in Resources */,
 				EC353F921B471D98000A34C5 /* the-theory-of-everything.png in Resources */,
-				EC05189B1B20E7AC00FA6DA4 /* Main.storyboard in Resources */,
-				EC0518A01B20E7AC00FA6DA4 /* LaunchScreen.xib in Resources */,
 				EC05189D1B20E7AC00FA6DA4 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,8 +246,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC0518931B20E7AC00FA6DA4 /* AppDelegate.swift in Sources */,
+				EC07CD551B4B8F090074654F /* TheaterTableViewCell.swift in Sources */,
 				EC0518961B20E7AC00FA6DA4 /* Cinne.xcdatamodeld in Sources */,
-				ECC0B49E1B3BB50600DCD685 /* NearbyTableViewController.swift in Sources */,
+				EC07CD511B4B89D50074654F /* PosterCollectionViewCell.swift in Sources */,
+				EC07CD4F1B4B89180074654F /* NearestTheaterTableViewCell.swift in Sources */,
+				EC07CD4E1B4B89180074654F /* NearbyTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

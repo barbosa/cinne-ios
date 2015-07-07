@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  Cinne
-//
-//  Created by Gustavo Barbosa on 6/4/15.
-//  Copyright (c) 2015 7pixels. All rights reserved.
-//
-
 import UIKit
 import CoreData
 
