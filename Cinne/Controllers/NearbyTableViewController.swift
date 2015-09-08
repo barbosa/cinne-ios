@@ -9,9 +9,9 @@ class NearbyTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         switch (indexPath.section, indexPath.row) {
         case (0, 0):
-            return tableView.dequeueReusableCellWithIdentifier(NearestTheaterTableViewCell.reuseIdentifier) as! UITableViewCell
+            return tableView.dequeueReusableCellWithIdentifier(NearestTheaterTableViewCell.reuseIdentifier) as! NearestTheaterTableViewCell
         default:
-            return tableView.dequeueReusableCellWithIdentifier(TheaterTableViewCell.reuseIdentifier) as! UITableViewCell
+            return tableView.dequeueReusableCellWithIdentifier(TheaterTableViewCell.reuseIdentifier) as! TheaterTableViewCell
         }
     }
     

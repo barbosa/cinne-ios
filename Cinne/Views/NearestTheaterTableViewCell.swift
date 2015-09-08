@@ -12,7 +12,7 @@ class NearestTheaterTableViewCell: UITableViewCell, UICollectionViewDataSource {
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(PosterCollectionViewCell.reuseIdentifier, forIndexPath: indexPath) as! UICollectionViewCell
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(PosterCollectionViewCell.reuseIdentifier, forIndexPath: indexPath) 
         return cell
     }
 }
